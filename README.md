@@ -38,3 +38,6 @@ The default training order is in configs.yaml is walk->uphill->downhill->nofoot.
 CUDA_VISIBLE_DEVICES=7 python dreamer.py --configs defaults metaworld
 ```
 You should also mannually modifiy the gpu id in the MetaWorld class in the wrappers.py file (line 336 and 350) to assign the gpu for rendering.
+
+## Appreciation
+The codes refer to the implemention of [dreamer-torch](https://github.com/jsikyoon/dreamer-torch). Thanks for the authors！
