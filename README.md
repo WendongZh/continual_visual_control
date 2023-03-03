@@ -21,19 +21,20 @@ Briefly speaking, in this work, we extend our previous work on continual visual 
 - [Mujuco](https://github.com/deepmind/mujoco)
 
 ## Benchmark
-We evaluate our
+We evaluate our approach on tasks collected from two different RL platforms: DMC and Meta-World. In our paper, the continual tasks on DMC are Walker-walk, Walker-uphill, Walker-downhill, and Walker-nofoot. The continual tasks on Meta-World are Window-open, Button-press, Hammer, and Assembly. Particularly, the last three tasks on the DMC benchmarks are mannually designed and you need to copy the files in ./metaworld_walker_xml to the DMC directory in your conda environment. These files do not affect the original tasks in DMC benchmarks.
 
 ## Getting Strated
-Since our approach can be applied for both deterministic and probabilistic image inpainting, so we seperate the codes under these two setups in different files and each file contains corresponding training and testing commonds.
 
-For all setups, the common pre-preparations are list as follows:
+1) Copy all files in ./metaworld_walker_xml to the DMC directory in your conda environment, such as /home/.conda/envs/your_env_name/lib/python3.7/site-packages/dm_control/suite/
 
-1) Download the pre-trained models and copy them under ./checkpoints directory. 
-
-2) (For training) Make another directory, e.g ./pretrained_ASL, and download the weights of [TResNet_L](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md) pretrained on OpenImage dataset to this directory.
-
-3) Install torchlight
+2) Training command on the DMC:  
 ```bash
-cd ./torchlight
-python setup.py install
+EGL_DEVICE_ID=7 CUDA_VISIBLE_DEVICES=7 python dreamer.py --configs defaults dmc
 ```
+The default training order is in configs.yaml is walk->uphill->downhill->nofoot. You can change it to test other orders.
+
+3) Training command on the Meta-World:  
+```bash
+CUDA_VISIBLE_DEVICES=7 python dreamer.py --configs defaults metaworld
+```
+You should also mannually modifiy the gpu id in the MetaWorld class in the wrappers.py file (line 336 and 350) to assign the gpu for rendering.
