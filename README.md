@@ -31,7 +31,7 @@ We evaluate our approach on tasks collected from two different RL platforms: DMC
 ```bash
 EGL_DEVICE_ID=7 CUDA_VISIBLE_DEVICES=7 python dreamer.py --configs defaults dmc
 ```
-The default training order is in configs.yaml is walk->uphill->downhill->nofoot. You can change it to test other orders.
+The default training order in configs.yaml is walk->uphill->downhill->nofoot. You can change it to test other orders.
 
 3) Training command on the Meta-World:  
 ```bash
