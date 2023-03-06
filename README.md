@@ -21,7 +21,9 @@ Briefly speaking, in this work, we extend our previous work on continual visual 
 - [Mujuco](https://github.com/deepmind/mujoco)
 
 ## Benchmark
-We evaluate our approach on tasks collected from two different RL platforms: DMC and Meta-World. In our paper, the continual tasks on DMC are Walker-walk, Walker-uphill, Walker-downhill, and Walker-nofoot. The continual tasks on Meta-World are Window-open, Button-press, Hammer, and Assembly. Particularly, the last three tasks on the DMC benchmarks are mannually designed and you need to copy the files in ./metaworld_walker_xml to the DMC directory in your conda environment. These files do not affect the original tasks in DMC benchmarks.
+We evaluate our approach on tasks collected from two different RL platforms: DMC and Meta-World. In our paper, the continual tasks on DMC are Walker-walk, Walker-uphill, Walker-downhill, and Walker-nofoot. The continual tasks on Meta-World are Window-open, Button-press, Hammer, and Assembly. 
+
+Particularly, the last three tasks on the DMC benchmarks are mannually designed and you need to copy the files in ./metaworld_walker_xml to the DMC directory in your conda environment. These files do not affect the original tasks in DMC benchmarks. **However, I STRONGLY suggest checking these files with your original files to make sure that they are belong to the same DMC version.**
 
 ## Getting Strated
 
