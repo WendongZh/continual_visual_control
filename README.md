@@ -1,6 +1,6 @@
 ### Predictive Experience Replay for Continual Visual Control and Forecasting
 
-Code for Predictive Experience Replay for Continual Visual Control and Forecasting.
+Code for Predictive Experience Replay for Continual Visual Control and Forecasting. [Paper on arxiv](https://arxiv.org/abs/2303.06572)
 
 This project is for our new approach on continual visual control which is submitted to the journal for possible publication. This work is an extension version of our previous work [CPL (CVPR'22)](https://openaccess.thecvf.com/content/CVPR2022/html/Chen_Continual_Predictive_Learning_From_Videos_CVPR_2022_paper.html). If you have any questions, feel free to make issues. Thanks for your interests!
 
