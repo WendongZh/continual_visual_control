@@ -1,8 +1,8 @@
-### Predictive Experience Replay for Continual Visual Control and Forecasting
+### Continual Visual Reinforcement Learning with A Life-Long World Model [ECML 2025]
 
-Code for Predictive Experience Replay for Continual Visual Control and Forecasting. [Paper on arxiv](https://arxiv.org/abs/2303.06572)
+Code for Continual Visual Reinforcement Learning with A Life-Long World Model. [Paper on arxiv](https://arxiv.org/abs/2303.06572)
 
-This project is for our new approach on continual visual control which is submitted to the journal for possible publication. This work is an extension version of our previous work [CPL (CVPR'22)](https://openaccess.thecvf.com/content/CVPR2022/html/Chen_Continual_Predictive_Learning_From_Videos_CVPR_2022_paper.html). If you have any questions, feel free to make issues. Thanks for your interests!
+This work is an extension version of our previous work [CPL (CVPR'22)](https://openaccess.thecvf.com/content/CVPR2022/html/Chen_Continual_Predictive_Learning_From_Videos_CVPR_2022_paper.html). If you have any questions, feel free to make issues. Thanks for your interests!
 
 ### Introduction:
 Briefly speaking, in this work, we extend our previous work on continual visual forecasting to address continual visual control tasks based on the model-based RL approach Dreamer. The key assumption is that an ideal world model can provide a non-forgetting environment simulator, which enables the agent to optimize the policy in a multi-task learning manner based on the imagined trajectories from the world model. We summarize the main contributions of this paper as follows:
@@ -11,9 +11,6 @@ Briefly speaking, in this work, we extend our previous work on continual visual 
 3) On the basis of the above two techniques, we make a pilot study of MBRL for continual visual control tasks, and propose the exploratory-conservative behavior learning method to improve the value estimation learned from replayed data.
 4) We show extensive experiments to demonstrate the superiority of our approach over the most advanced methods in visual control and forecasting. The results also indicate that learning a non-forgetting world model is a cornerstone to continual RL.
 
-<p align='center'>  
-  <img src='https://github.com/WendongZh/continual_visual_control/blob/main/save_img/pami_githubpng.PNG' width='870'/>
-</p>
 
 ## Prerequisites
 - [Deepmind Control Suite](https://github.com/deepmind/dm_control)
