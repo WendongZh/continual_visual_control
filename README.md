@@ -1,4 +1,4 @@
-### Continual Visual Reinforcement Learning with A Life-Long World Model [ECML 2025]
+# Continual Visual Reinforcement Learning with A Life-Long World Model [ECML 2025]
 
 Code for Continual Visual Reinforcement Learning with A Life-Long World Model. [Paper on arxiv](https://arxiv.org/abs/2303.06572)
 
